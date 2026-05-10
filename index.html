@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skandināvijas Ceļvedis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div class="logo">Skandināvija</div>
+            <ul>
+                <li><a href="#home">Sākums</a></li>
+                <li><a href="#countries">Valstis</a></li>
+                <li><a href="#gallery">Galerija</a></li>
+                <li><a href="#contact">Kontakti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Atklāj Skandināvijas burvību</h1>
+        <p>Ziemeļvalstu daba, kultūra un miers vienuviet.</p>
+    </section>
+
+    <section id="countries" class="content-section">
+        <h2>Par Skandināviju</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Norvēģija</h3>
+                <p>Fjordu un kalnu zeme, kur daba pārsteidz ik uz soļa.</p>
+            </div>
+            <div class="card">
+                <h3>Zviedrija</h3>
+                <p>Mūsdienīga dizaina, "Abba" un neskaitāmu ezeru dzimtene.</p>
+            </div>
+            <div class="card">
+                <h3>Dānija</h3>
+                <p>Laimīgāko cilvēku valsts ar bagātu vēsturi un riteņbraukšanas kultūru.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="content-section">
+        <h2>Fotogalerija</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1520106212299-d99c443e4568?q=80&w=400" alt="Norvēģija" class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11?q=80&w=400" alt="Zviedrija" class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1555992336-fb0d39498b58?q=80&w=400" alt="Dānija" class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1489657780376-e0d8630c4bd3?q=80&w=400" alt="Fjordi" class="gallery-item">
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Pieteikties jaunumiem</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Vārds:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-pasts:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Kura valsts Tevi interesē?</label>
+                <select id="country">
+                    <option value="norway">Norvēģija</option>
+                    <option value="sweden">Zviedrija</option>
+                    <option value="denmark">Dānija</option>
+                </select>
+            </div>
+            <button type="submit">Nosūtīt</button>
+        </form>
+        <div id="formMessage" class="hidden"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Skandināvijas Projekts. Attēli: Unsplash.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
